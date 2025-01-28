@@ -354,70 +354,97 @@ line-height: 20px;
 }
 
 /*****************Metrics_section*************************/
+.metrics_section_container{
+    padding:0;
+    margin: 0;
+    width: 100%;
+    max-width: 1200px;
+}
 .metrics_section_main{
     display: flex;
+    padding: 0;
+}
+
+.metrics_section_certificate{
+    display: flex;
+    position: relative;
 }
 .left-panel{
+    height: 100%;
+    width: 80px;
+    max-height: 400px;
     background-color: var(--black);
-    width: 100px;
-    flex: 1;
+    margin-left: 50px;
+    position: absolute;
 }
-.left_content{
-    flex: 2;
+.certificate_content{
     display: flex;
     flex-direction: column;
     justify-content: left;
     background-color: var(--white);
 }
-.certificate_content h3{
+.certificate_content h4{
     display: flex;
     text-align: left;
+    font-family: sans-serif;
+    padding-left: 140px
 }
 .subtitle {
     font-size: 10px;
     color: var(--dirty);
     display: flex;
     text-align: left;
+    font-family: sans-serif;
+    padding-left: 140px;
+    line-height: 1.5;
+    padding-top: 10px;
 }
 .bottom-panel {
     width: 100%;
     max-width: 600px;
     height: 40px;
     background-color: #b2b2b2;
-    margin: 15px 0 10px 0;
+    margin: 10px 0 10px 0;
+    z-index: 2;
 }
 .certificate_description{
     font-size: 9px;
     color: var(--dirty);
-    line-height: 1.5;
+    line-height:1;
     display: flex;
     text-align: left;
+    padding-left: 140px;
 }
 .metrics_section_right{
     padding-left:41px;
-
-}
-.metrics_section_right{
     font-size: 18px;
     padding-bottom: 27px;
+    align-items: center;
 }
 .metrics_section_right p:first-child{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 25px;
+    margin-left: -1%;
+    font-family: sans-serif;
 }
 .right_title{
     text-align: left;
     display: grid;
     gap: 10px;
     padding: 20px 0;
+    text-align: justify;
+}
+.right_title h4{
+    font-family: sans-serif;
 }
 .download_report_btn{
-    padding: 24px 0;
+    padding: 16px 0;
+    display: flex;
 }
 .download_report{
     color: var(--white);
     background-color: var(--green);
-    padding: 16px 28px;
+    padding: 10px 24px;
     border-radius: 30px;
 }
